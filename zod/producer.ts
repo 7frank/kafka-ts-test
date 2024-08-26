@@ -1,6 +1,6 @@
 // producer.ts
 import { Kafka } from 'kafkajs';
-import { registerSchema, UserEvent, UserEventSchema } from './registerSchema';
+import { registerSchema, UserEvent, UserEventSchema, registry } from './registerSchema';
 
 const kafka = new Kafka({
   clientId: 'my-app',

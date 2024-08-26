@@ -1,6 +1,6 @@
 // consumer.ts
 import { Kafka } from 'kafkajs';
-import { registerSchema, UserEventSchema } from './registerSchema';
+import { UserEventSchema, registry } from './registerSchema';
 
 const kafka = new Kafka({
   clientId: 'my-app',

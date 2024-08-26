@@ -15,7 +15,7 @@ export type UserEvent = z.infer<typeof UserEventSchema>;
 // Convert Zod schema to JSON schema
 const jsonSchema = zodToJsonSchema(UserEventSchema, "UserEvent");
 
-const registry = new SchemaRegistry({ host: 'http://localhost:8081' });
+export const registry = new SchemaRegistry({ host: 'http://localhost:8081' });
 
 export const registerSchema = async () => {
   const schema = {
