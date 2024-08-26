@@ -9,6 +9,9 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "kafkajs": "^2.2.4"
+    "@kafkajs/confluent-schema-registry": "^3.3.0",
+    "kafkajs": "^2.2.4",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.2"
   }
 }
